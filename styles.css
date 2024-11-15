@@ -83,7 +83,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* z-index: 2; */
+  /* filter: blur(1px); */
 }
 
 .hero-img {
@@ -152,12 +152,12 @@ img {
 @media only screen and (max-width: 1279px) { 
   h1 { font-size: 4rem; }
   section { flex-direction: column; }
-  .balloons { max-width: 100%; flex-wrap: wrap; }
+  .balloons { max-width: 100%; }
   .hide {display: none;}
 }
 
 @media only screen and (max-width: 768px) { 
   body { padding: 1rem; gap: 1.5rem; }
   h1 { font-size: 3rem; }s
-  .balloons img { transform: scale(0.6); }
+  .balloons img { transform: scale(0.5); }
 }
