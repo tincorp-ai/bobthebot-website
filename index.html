@@ -66,7 +66,13 @@
     <a>Privacy poilcy</a>
   </footer>
 
-  <!-- Link to external JavaScript file -->
-  <script src="script.js"></script>
+  <!-- Cursor -->
+  <script type="module">
+    import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+
+    new cursoreffects.fairyDustCursor({
+      colors: ["#ff0000", "#00ff00", "#0000ff"],
+    });
+  </script>
 </body>
 </html>
