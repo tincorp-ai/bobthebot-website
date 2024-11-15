@@ -1,7 +1,6 @@
 /* normalize */
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
-img { border-style: none; }
 
 /* sections */
 
@@ -71,9 +70,15 @@ h1 {
 
 
 
+img { 
+  border-style: none; 
+  max-width: 100%;
+}
+
 /* Mobile */
 @media only screen and (max-width: 1279px) { 
   h1 { font-size: 4rem; }
+  section { flex-direction: column; }
 }
 
 @media only screen and (max-width: 768px) { 
