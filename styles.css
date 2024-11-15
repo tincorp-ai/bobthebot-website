@@ -8,8 +8,8 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  padding: 1.5rem;
+  gap: 3rem;
+  padding: 2rem;
   font-family: "Poppins", sans-serif;
 }
 
@@ -19,13 +19,14 @@ section {
   padding-bottom: 0;
   width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 #hero {
   flex-direction: column;
   min-height: 100vh;
   background: radial-gradient(
-    70% 80% at 50% 80%, 
+    60% 80% at 50% 80%, 
     hsl(300, 90%, 92%) 20%, 
     hsl(50, 100%, 90%) 40%, 
     hsl(115, 80%, 93%) 60%, 
@@ -36,6 +37,40 @@ section {
   align-items: center;
   gap: 2.5rem;
 }
+
+/* text styles */
+
+h1 {
+  color: rgba(10, 10, 10, 0.87);
+  text-align: center;
+  text-shadow: 0px 8px 24px rgba(73, 122, 131, 0.20);
+  font-size: 5.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 95%;
+  margin: 0;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: rgba(10, 10, 10, 0.87);
+  background: linear-gradient(120deg, #ac80fd 0%, #CD00FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  color: #593C68;
+  font-size: 1.15rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+/* features */
 
 #gifts {
   background: radial-gradient(
@@ -51,6 +86,17 @@ section {
     hsl(50, 100%, 96%) 100% );
 }
 
+.features div {
+  max-width: 36rem;
+}
+
+.features p {
+  padding-right: 8rem;
+}
+
+
+/* Footer */
+
 footer {
   display: flex;
   justify-content: center;
@@ -58,29 +104,6 @@ footer {
   gap: 1rem;
 }
 
-/* text styles */
-
-h1 {
-  color: rgba(10, 10, 10, 0.87);
-  text-align: center;
-  text-shadow: 0px 8px 24px rgba(73, 122, 131, 0.20);
-  font-size: 5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 95%;
-}
-
-h2 {
-  font-size: 3.25rem;
-  font-weight: 600;
-  line-height: 110%;
-
-  color: #410F7B;
-  background: linear-gradient(120deg, #ac80fd 0%, #CD00FF 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 #import h2 {
   background: linear-gradient(120deg, #FFAA42 0%, #FF0000 100%);
@@ -89,6 +112,12 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
+#import p {
+  color: #68403C;
+}
+
+
+/* Images */
 
 img { 
   border-style: none; 
