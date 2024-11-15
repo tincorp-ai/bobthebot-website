@@ -60,8 +60,21 @@ h1 {
   color: rgba(10, 10, 10, 0.87);
   text-align: center;
   text-shadow: 0px 8px 24px rgba(73, 122, 131, 0.20);
-  font-size: 5.5rem;
+  font-size: 5rem;
   font-style: normal;
   font-weight: 700;
   line-height: 95%;
+  max-width: 40rem;
+}
+
+
+
+/* Mobile */
+@media only screen and (max-width: 1279px) { 
+  h1 { font-size: 4rem; }
+}
+
+@media only screen and (max-width: 768px) { 
+  body { padding: .75rem; gap: 1.5rem; }
+  h1 { font-size: 3rem; }
 }
