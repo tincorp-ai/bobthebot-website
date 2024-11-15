@@ -14,12 +14,12 @@ body {
 }
 
 section {
-  border-radius: 4rem;
-  padding: 3rem;
-  padding-bottom: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  border-radius: 4rem;
+  padding: 3rem 4rem;
+  padding-bottom: 0;
 }
 
 #hero {
@@ -63,7 +63,7 @@ h2 {
 }
 
 p {
-  color: #593C68;
+  color: hsl(280, 25%, 30%);
   font-size: 1.15rem;
   font-style: normal;
   font-weight: 400;
@@ -87,11 +87,11 @@ p {
 }
 
 .features div {
-  max-width: 36rem;
+  max-width: 32rem;
 }
 
 .features p {
-  padding-right: 8rem;
+  padding-right: 3rem;
 }
 
 
@@ -113,7 +113,7 @@ footer {
 }
 
 #import p {
-  color: #68403C;
+  color: hsl(5, 25%, 30%);
 }
 
 
