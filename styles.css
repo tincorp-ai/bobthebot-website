@@ -58,7 +58,7 @@ img {
 
 /* Baloons */
 .balloons {
-  width: 100%;
+  width: calc(100% + 3rem);
   height: 100vh;
   position: absolute;
   top: 0;
