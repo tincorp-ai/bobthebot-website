@@ -6,14 +6,6 @@ body {
   width: 100%;
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background: radial-gradient(
-    60% 80% at 50% 80%, 
-    hsl(300, 90%, 92%) 20%, 
-    hsl(50, 100%, 90%) 40%, 
-    hsl(115, 80%, 93%) 60%, 
-    hsl(190, 90%, 96%) 80%, 
-    hsl(190, 95%, 98%) 100%
-  );
 }
 
 /* Text styles */
@@ -44,13 +36,24 @@ img {
 
 /* Hero */
 .hero {
-  width: 100%;
+  width: calc(100% - 3rem);
+  height: calc(100vh - 3rem);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
   position: sticky;
   top: 0px;
+  margin: 1.5rem;
+  border-radius: 4rem;
+  background: radial-gradient(
+    60% 80% at 50% 80%, 
+    hsl(300, 90%, 92%) 20%, 
+    hsl(50, 100%, 90%) 40%, 
+    hsl(115, 80%, 93%) 60%, 
+    hsl(190, 90%, 96%) 80%, 
+    hsl(190, 95%, 98%) 100%
+  );
 }
 
 /* Baloons */
@@ -59,6 +62,8 @@ img {
   height: 100vh;
   position: absolute;
   top: 0;
+  left: 0;
+  margin: -1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,6 +73,10 @@ img {
 .chat {
   width: 100%;
   z-index: 100;
+  position: absolute;
+  top: 10rem;
+  height: calc(100vh - 10rem);
+  overflow-y: auto;
 }
 
 .messages .phone {
