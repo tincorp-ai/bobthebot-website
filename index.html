@@ -41,7 +41,7 @@
         </a>
       </div>
 
-      <ul class="chat">
+      <ul class="chat parent">
         <li>
           Today is your dad's birthday! 🎂✨
         </li>
@@ -83,10 +83,34 @@
     import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
 
     new cursoreffects.fairyDustCursor({
-      colors: ["#ff0000", "#00ff00", "#0000ff"],
+      colors: ["#ff00ff", "#ffff00", "#0000ff"],
     });
 
     // Hide chat
+    
+    const listItems = document.querySelectorAll('li');
+    const parentContainer = document.querySelector('.parent');
+
+    // Create an Intersection Observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // If the element is in the container (and not yet at the top), make it visible
+          entry.target.classList.add('hidden');
+        } else {
+          // If the element is out of view (reached the top), make it hidden
+          entry.target.classList.remove('hidden');
+        }
+      });
+    }, {
+      root: parentContainer, // Set the parent container as the root
+      rootMargin: '0px 0px -95% 0px', // Trigger when 100% of the element is out of the parent container's top
+      threshold: 0, // The element is considered in view when it is visible in the root
+    });
+
+    // Observe each <li> element
+    listItems.forEach(item => observer.observe(item));
+
   </script>
 </body>
 </html>
