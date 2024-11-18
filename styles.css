@@ -154,7 +154,7 @@ li {
     0px 2.4px 9.6px 0px rgba(53, 22, 59, 0.10)
   ;
   color: #0B94EF;
-  width: 24rem;
+  width: 22rem;
   margin: .5rem;
   margin-right: 4rem;
   /* position: sticky; */
@@ -216,4 +216,5 @@ li.blue {
   .content { padding: 1rem 0 0; }
   li { margin-right: 2rem; }
   li.ble { margin-left: 2rem; }
+  .hero { max-height: 140vh; }
 }

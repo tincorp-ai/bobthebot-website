@@ -43,29 +43,25 @@
 
       <ul class="chat parent">
         <li>
-          Today is your dad's birthday! 🎂✨
+          Today is your dad's birthday! 🎂
         </li>
         <li class="blue" >
           Thank you! Can you make a gift for him?
         </li>
         <li>
           Sync with your Google account to import birthdays or add them manually. 
-          HolaBob will send you timely reminders by message.
         </li>
-        <li class=" blue" >
+        <li class="blue" >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </li>
         <li>
-          Today is your dad's birthday! 🎂✨
+          HolaBob will send you timely reminders by message.
         </li>
-        <li class=" blue" >
+        <li class="blue" >
           Thank you! Can you make a gift for him?
         </li>
         <li>
-          Sync with your Google account to import birthdays or add them manually. 
-        </li>
-        <li class=" blue" >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Start chatting with Bob 
         </li>
       </ul>
 
@@ -86,29 +82,24 @@
       colors: ["#ff00ff", "#ffff00", "#0000ff"],
     });
 
-    // Hide chat
-    
+    // Hide chat messages
     const listItems = document.querySelectorAll('li');
     const parentContainer = document.querySelector('.parent');
 
-    // Create an Intersection Observer
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          // If the element is in the container (and not yet at the top), make it visible
           entry.target.classList.add('hidden');
         } else {
-          // If the element is out of view (reached the top), make it hidden
           entry.target.classList.remove('hidden');
         }
       });
     }, {
-      root: parentContainer, // Set the parent container as the root
-      rootMargin: '0px 0px -95% 0px', // Trigger when 100% of the element is out of the parent container's top
-      threshold: 0, // The element is considered in view when it is visible in the root
+      root: parentContainer, 
+      rootMargin: '0px 0px -92% 0px', 
+      threshold: 0, 
     });
 
-    // Observe each <li> element
     listItems.forEach(item => observer.observe(item));
 
   </script>
