@@ -45,6 +45,7 @@ p {
   font-weight: 400;
   letter-spacing: 0.2px;
   text-align: center;
+  margin: 1rem 0;
 }
 
 /* Images */
@@ -67,6 +68,7 @@ img {
 
 .hero {
   width: 100%;
+  max-height: calc(100vh - 3rem);
   flex-grow: 2;
   display: flex;
   flex-direction: column;
@@ -80,7 +82,10 @@ img {
     hsl(190, 90%, 96%) 80%, 
     hsl(190, 95%, 98%) 100%
   );
-  max-height: calc(100vh - 3rem);
+}
+
+.hero p {
+  max-width: 28rem;
 }
 
 /* Footer */
@@ -101,6 +106,11 @@ footer a {
 /* cta - button */
 .cta {
   display: flex;
+  align-items: center;
+}
+
+.cta a {
+  display: flex;
   padding: .9rem 1.3rem;
   justify-content: center;
   align-items: center;
@@ -120,7 +130,8 @@ footer a {
   letter-spacing: 0.4px;
   text-decoration: none;
 }
-.cta:hover {
+
+.cta a:hover {
   cursor: pointer;
 }
 
