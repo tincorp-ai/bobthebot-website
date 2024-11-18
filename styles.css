@@ -1,14 +1,37 @@
 /* normalize */
-* { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; }
-
-body {
-  width: 100%;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  padding: 0;
 }
 
-/* Text styles */
+:root {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  position: relative;
+  font-family: "Poppins", system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  min-height: 100%;
+}
+body {
+  position: relative;
+  width: 100%;
+  /* min-height: 100vh; */
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+input,
+textarea,
+button {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+/* Text */
+
 h1 {
   color: rgba(10, 10, 10, 0.87);
   text-align: center;
@@ -70,6 +93,7 @@ img {
 }
 
 /* Chat */
+
 .chat {
   width: 100%;
   z-index: 100;
