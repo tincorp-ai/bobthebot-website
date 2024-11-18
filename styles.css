@@ -1,4 +1,4 @@
-/* normalize */
+/* Normalize */
 *,
 *:before,
 *:after {
@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
 }
-
 :root {
   box-sizing: border-box;
   -webkit-text-size-adjust: none;
@@ -16,13 +15,11 @@
   min-height: 100%;
 }
 body {
-  position: relative;
   width: 100%;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   font-size: 100%;
   line-height: 1.5;
 }
-
 input,
 textarea,
 button {
@@ -31,20 +28,18 @@ button {
 }
 
 /* Text */
-
 h1 {
   color: rgba(10, 10, 10, 0.87);
   text-align: center;
   text-shadow: 0px 8px 24px rgba(73, 122, 131, 0.20);
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 95%;
+  line-height: 92%;
   margin: 0;
 }
-
 p {
-  color: hsl(280, 25%, 30%);
+  color: hsl(220, 25%, 30%);
   font-size: 1.15rem;
   font-style: normal;
   font-weight: 400;
@@ -58,16 +53,24 @@ img {
 }
 
 /* Hero */
+.content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  padding-bottom: 0;
+  position: fixed;
+}
+
 .hero {
-  width: calc(100% - 3rem);
-  height: calc(100vh - 3rem);
+  width: 100%;
+  flex-grow: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  position: sticky;
-  top: 0px;
-  margin: 1.5rem;
   border-radius: 4rem;
   background: radial-gradient(
     60% 80% at 50% 80%, 
@@ -79,11 +82,52 @@ img {
   );
 }
 
-/* Baloons */
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 1.5rem;
+  padding: 0 1.5rem;
+}
+footer p,
+footer a {
+  font-size: .75rem;
+  color: hsl(182, 20%, 70%);
+}
+
+/* cta - button */
+.cta {
+  display: flex;
+  padding: .9rem 1.3rem;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  border-radius: 4rem;
+  background: linear-gradient(
+    185deg, 
+    #20F355 5%, 
+    #00CC4D 100%);
+  box-shadow: 
+    0px 8px 24px 0px rgba(44, 223, 94, 0.20), 
+    0px 2px 8px 0px rgba(22, 59, 22, 0.10);
+  color: white;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+}
+.cta:hover {
+  cursor: pointer;
+}
+
+/* Balloons */
 .balloons {
   width: calc(100% + 3rem);
   height: 100vh;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   margin: -1.5rem;
@@ -96,22 +140,24 @@ img {
 
 .chat {
   width: 100%;
-  z-index: 100;
-  position: absolute;
-  top: 0;
-  max-height: 100vh;
+  /* max-height: 70vh; */
   overflow-y: auto;
-}
-
-.chat .phone {
-  max-width: 24rem;
-}
-
-.message {
+  position: sticky;
+  /* bottom: 0; */
+  top: 30rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 12px;
+  /* padding-top: 20rem; */
+}
+.chat .phone {
+  max-width: 32rem;
+  /* position: sticky; */
+  /* top: 600px; */
+}
+.message {
+  list-style: none;
+  display: block;
   padding: 1.5rem;
   border-radius: 2rem 2rem 2rem 0;
   background: white;
@@ -121,42 +167,23 @@ img {
   ;
   color: #0B94EF;
   max-width: 22rem;
-  margin: 0 3rem 0 0;
+  margin: .5rem 3rem .5rem 0;
 }
-
 .message.blue {
   color: white;
   background: #0B94EF;
   border-radius: 2rem 2rem 0 2rem;
-  margin: 0 0 0 3rem;
+  margin: .5rem 0 .5rem 3rem;
 }
 
-/* Footer */
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  position: fixed;
-  bottom: 0px;
-  right: 0px;
-  height: 1.75rem;
-  padding: 0 1.5rem;
-}
-footer p,
-footer a {
-  font-size: .75rem;
-  color: hsl(182, 20%, 70%);
-}
+
 
 /* Mobile */
-
 @media only screen and (max-width: 1279px) { 
   h1 { font-size: 4rem; }
   .balloons { max-width: 100%; }
   .hide {display: none;}
 }
-
 @media only screen and (max-width: 768px) { 
   body { padding: 1rem; }
   h1 { font-size: 3rem; }
