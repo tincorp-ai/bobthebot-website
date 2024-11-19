@@ -94,9 +94,9 @@
         }
       });
     }, {
-      root: parentContainer, 
-      rootMargin: '0px 0px -92% 0px', 
-      threshold: 0, 
+      root: parentContainer, // Set the parent container as the root
+      rootMargin: '0px 0px -95% 0px', // Trigger when 100% of the element is out of the parent container's top
+      threshold: 0, // The element is considered in view when it is visible in the root
     });
 
     listItems.forEach(item => observer.observe(item));
