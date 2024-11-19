@@ -228,16 +228,14 @@ li.hidden {
 
 /* Mobile */
 @media only screen and (max-width: 1279px) { 
-  .balloons { max-width: 100%; }
-  .hide {display: none;}
-  
 }
+
 @media only screen and (max-width: 768px) { 
   h1 { font-size: 3rem; }
   .balloons img { transform: scale(0.5); }
 
-  .content { padding: 1rem 0 0; }
+  .content { padding: 1rem 0 0; height: 200vh; }
   li { margin-right: 2rem; }
   li.ble { margin-left: 2rem; }
-  .hero { max-height: 140vh; }
+  .hero { min-height: 200vh; }
 }
