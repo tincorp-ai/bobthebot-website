@@ -57,7 +57,7 @@ img {
 /* Hero */
 .content {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,12 +91,12 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  height: 1.5rem;
+  height: 3rem;
   padding: 0 1.5rem;
 }
 footer p,
 footer a {
-  font-size: .75rem;
+  font-size: .8rem;
   color: hsl(182, 20%, 70%);
 }
 
@@ -143,11 +143,11 @@ footer a {
 
 .phone {
   position: sticky;
-  top: 2rem;
+  top: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
 }
 
 .phone img {
@@ -158,26 +158,25 @@ footer a {
 
 .chat {
   width: 100%;
-  max-width: 100%;
+  max-width: 26rem;
   z-index: 20;
-  padding: 2rem .5rem;
+  padding: 1.5rem .5rem;
   border-radius: 3rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: -50rem;
+  gap: 1rem;
 }
 
 li {
   list-style: none;
   display: block;
-  width: 22rem;
   max-width: 90%;
-  margin: .5rem;
   padding: 1.5rem;
-  border-radius: 2rem 2rem 2rem 0;
 
+  border-radius: 2rem 2rem 2rem 0;
   box-shadow: 0px 10px 28px 0px rgba(67, 89, 255, 0.15);
   background-color: white;
   color: #0b85ef;
@@ -186,30 +185,36 @@ li {
   line-height: 120%;
   opacity: 1;
 
-  margin-right: 3rem;
+  margin: 0;
+  margin-right: auto;
   transform: rotate(-2deg);
-
   transition: opacity 0.3s ease-out;
 }
 
 li.hide { opacity: 0; }
-
-li:last-of-type {
-  box-shadow: none;
-  background: none;
-  transform: rotate(0deg);
-  margin: 0;
-  padding: 2rem 0 5rem;
-}
 
 li.blue {
   color: white;
   background: radial-gradient(200% 100% at 50% 100%, #62AFF2 0%, #5266fc 100%);
   border-radius: 2rem 2rem 0 2rem;
   margin-right: 0;
-  margin-left: 3rem;
+  margin-left: auto;
   transform: rotate(2deg);
 }
+
+/* CTA inside of list */
+li:last-of-type {
+  box-shadow: none;
+  background: none;
+  transform: rotate(0deg);
+  margin: 0 0 5rem;
+}
+
+li img {
+  border-radius: 1rem;
+  margin-top: .5rem;
+}
+
 
 .chat::-webkit-scrollbar {
   display: none; /* Hide scrollbar for Chrome, Safari and Opera */
@@ -229,14 +234,11 @@ li.blue {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 2;
+  z-index: 1;
   user-select: none;
 }
 
-.balloons img {
-  width: auto;
-}
-
+.balloons img { width: auto; }
 .balloons.left { left: 0; }
 .balloons.right { right: 0; }
 
