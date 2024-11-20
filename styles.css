@@ -153,7 +153,7 @@ footer a {
 .phone img {
   max-height: 48rem;
   z-index: 3;
-  filter: drop-shadow(0px 40px 75px 0px #a806971a);  
+  filter: drop-shadow(0px 40px 75px 0px #a80697);  
 }
 
 .chat {
@@ -191,8 +191,6 @@ li {
   transition: opacity 0.3s ease-out;
 }
 
-li.hide { opacity: 0; }
-
 li.blue {
   color: white;
   background: radial-gradient(200% 100% at 50% 100%, #62AFF2 0%, #5266fc 100%);
@@ -202,6 +200,8 @@ li.blue {
   transform: rotate(2deg);
 }
 
+li.hide { opacity: 0; }
+
 /* CTA inside of list */
 li:last-of-type {
   box-shadow: none;
@@ -210,18 +210,10 @@ li:last-of-type {
   margin: 0 0 5rem;
 }
 
+/* Image inside of list */
 li img {
   border-radius: 1rem;
   margin-top: .5rem;
-}
-
-
-.chat::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for Chrome, Safari and Opera */
-}
-.chat {
-  -ms-overflow-style: none;  /* Hide scrollbar IE and Edge */
-  scrollbar-width: none;  /* Hide scrollbar Firefox */
 }
 
 /* Balloons */
@@ -246,5 +238,5 @@ li img {
 /* Desktop */
 @media only screen and (min-width: 768px) { 
   h1 { font-size: 4.25rem; }
-  .content { padding: 1.5rem; }
+  .content { padding: 1.5rem 1.5rem 0 1.5rem; }
 }
