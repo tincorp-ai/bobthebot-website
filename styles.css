@@ -57,13 +57,13 @@ img {
 /* Hero */
 .content {
   width: 100%;
-  /* height: 100vh; */
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: .5rem; 
   padding-bottom: 0;
-  position: fixed;
+  /* position: fixed; */
 }
 
 .hero {
@@ -141,14 +141,14 @@ footer a {
   width: 100%;
   max-width: 100%;
   z-index: 20;
-  flex-grow: 2;
-  overflow-y: auto;
+  /* flex-grow: 2; */
+  /* overflow-y: auto; */
   padding: 4rem 0 2rem;
   border-radius: 3rem;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
 
   background-image: ;
   background: url(./img/phone.png); 
@@ -208,7 +208,7 @@ li.hidden {
 /* Balloons */
 .balloons {
   width: 30%;
-  /* height: 100vh; */
+  height: 100vh;
   position: fixed;
   top: 0;
   margin: -1.5rem;
