@@ -57,7 +57,7 @@ img {
 /* Hero */
 .content {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,12 +68,12 @@ img {
 
 .hero {
   width: 100%;
-  max-height: calc(100vh - 2rem);
+  /* max-height: calc(100vh - 2rem); */
   flex-grow: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 4rem;
+  border-radius: 3rem;
   background: radial-gradient(
     60% 80% at 50% 80%, 
     hsl(300, 90%, 92%) 20%, 
@@ -208,7 +208,7 @@ li.hidden {
 /* Balloons */
 .balloons {
   width: 30%;
-  height: 100vh;
+  /* height: 100vh; */
   position: fixed;
   top: 0;
   margin: -1.5rem;
@@ -238,7 +238,7 @@ li.hidden {
   /* .balloons img { transform: scale(0.5); } */
   .content { 
     padding: 1.5rem; 
-    height: 200vh; 
+    /* height: 200vh;  */
   }
   /* li { margin-right: 2rem; } */
   /* li.ble { margin-left: 2rem; } */
