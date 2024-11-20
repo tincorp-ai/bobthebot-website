@@ -207,7 +207,7 @@ li:last-of-type {
   box-shadow: none;
   background: none;
   transform: rotate(0deg);
-  margin: 0 0 5rem;
+  margin: 0 0 3rem;
 }
 
 /* Image inside of list */
