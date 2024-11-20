@@ -63,24 +63,21 @@ img {
   align-items: center;
   padding: .5rem 0; 
   padding-bottom: 0;
-  /* position: fixed; */
 }
 
 .hero {
   width: 100%;
-  /* max-height: calc(100vh - 2rem); */
   flex-grow: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 3rem;
   background: radial-gradient(
-    60% 80% at 50% 80%, 
+    circle at center,
     hsl(300, 90%, 92%) 20%, 
     hsl(50, 100%, 90%) 40%, 
     hsl(115, 80%, 93%) 60%, 
-    hsl(190, 90%, 96%) 80%, 
-    hsl(190, 95%, 98%) 100%
+    hsl(190, 90%, 97%) 100%
   );
 }
 
@@ -244,20 +241,8 @@ li.blue {
 .balloons.right { right: 0; }
 
 
-/* Mobile */
-@media only screen and (max-width: 1279px) { 
-}
-
+/* Desktop */
 @media only screen and (min-width: 768px) { 
-  h1 { 
-    font-size: 4.25rem;
-  }
-  /* .balloons img { transform: scale(0.5); } */
-  .content { 
-    padding: 1.5rem; 
-  }
-  .chat {
-    /* max-height: 60vh; */
-    /* overflow-y: auto; */
-  }
+  h1 { font-size: 4.25rem; }
+  .content { padding: 1.5rem; }
 }

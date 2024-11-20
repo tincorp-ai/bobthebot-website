@@ -20,8 +20,8 @@
     <img alt="" src="./img/b-green.png" style="margin-bottom: auto;"/>
   </div>
   <div class="balloons right">
-    <img alt="" src="./img/o-yellow.png" style="margin-top: 20rem;"/>
-    <img alt="" src="./img/b-purple.png" style="margin-bottom: 20rem;" />
+    <img alt="" src="./img/o-yellow.png" style="margin-bottom: 20rem;"/>
+    <img alt="" src="./img/b-purple.png" style="margin-top: 20rem;" />
   </div>
 
   <div class="content">
@@ -42,7 +42,7 @@
       <div class="phone">
         <img src="./img/phone.png" />
       </div>
-        <ul class="chat parent">
+        <ul class="chat">
           <li>
             Today is Kate's birthday! 🎂
           </li>
@@ -100,24 +100,20 @@
     });
 
     // Hide chat messages
-    const listItems = document.querySelectorAll('li');
-    const parentContainer = document.querySelector('.parent');
+    const targets = document.querySelectorAll('li');
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('hidden');
-        } else {
-          entry.target.classList.remove('hidden');
-        }
-      });
-    }, {
-      root: parentContainer, // Set the parent container as the root
-      rootMargin: '0px 0px -100% 0px', // Trigger when 100% of the element is out of the parent container's top
-      threshold: 0, // The element is considered in view when it is visible in the root
-    });
+window.addEventListener('scroll', () => {
+  targets.forEach(target => {
+    const targetRect = target.getBoundingClientRect();
 
-    listItems.forEach(item => observer.observe(item));
+    // Toggle the class based on each element's position
+    if (targetRect.top <= 32) {
+      target.classList.add('hide');
+    } else {
+      target.classList.remove('hide');
+    }
+  });
+});
 
   </script>
 </body>
