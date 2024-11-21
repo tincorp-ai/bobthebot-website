@@ -36,16 +36,16 @@ h1 {
   font-style: normal;
   font-weight: 700;
   line-height: 92%;
-  margin: 1.25rem 0;
+  margin: 1rem 0;
 }
 p {
   color: hsl(220, 25%, 30%);
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.2px;
   text-align: center;
-  margin: 1rem 0;
+  margin: .5rem 0;
 }
 
 /* Images */
@@ -86,7 +86,6 @@ img {
 
 .logo {
   margin: .5rem;
-  mix-blend-mode: color-burn;
 }
 
 .hero p {
@@ -110,12 +109,12 @@ img {
 .cta p {
   font-size: .95rem;
   font-weight: 600;
-  margin-bottom: .5rem;
+  margin: .5rem;
 }
 
 .cta a {
   display: flex;
-  padding: .9rem 1.3rem;
+  padding: .8rem 1.3rem;
   justify-content: center;
   align-items: center;
   gap: .5rem;
@@ -145,7 +144,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 1rem 0;
+  padding: 1.5rem 1rem 0;
   max-height: 32rem;
 }
 
@@ -203,12 +202,12 @@ li.blue {
 li.hide { opacity: 0; }
 
 /* CTA inside of list */
-li:last-of-type {
+/* li:last-of-type {
   box-shadow: none;
   background: none;
   transform: rotate(0deg);
   margin: 0;
-}
+} */
 
 /* Image inside of list */
 li img {
