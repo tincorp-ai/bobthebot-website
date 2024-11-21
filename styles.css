@@ -148,7 +148,7 @@ img {
   flex-direction: column;
   align-items: center;
   padding: 1rem 1rem 0;
-  max-height: 32rem;
+  max-height: 26rem;
 }
 
 .phone img {
@@ -167,7 +167,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -29rem;
+  margin-top: -24rem;
   gap: .75rem;
 }
 
@@ -254,4 +254,5 @@ footer a {
 @media only screen and (min-width: 768px) { 
   h1 { font-size: 4.2rem; }
   .content { padding: 1.5rem 1.5rem 0 1.5rem; }
+  /* .phone */
 }
