@@ -73,7 +73,7 @@ img {
   align-items: center;
   border-radius: 3rem;
   background: radial-gradient(
-    circle at center,
+    50% 90% at 50% 70%,
     hsl(300, 90%, 92%) 20%, 
     hsl(50, 100%, 90%) 40%, 
     hsl(115, 80%, 93%) 60%, 
