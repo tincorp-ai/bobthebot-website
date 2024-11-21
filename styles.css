@@ -87,10 +87,10 @@ img {
   max-width: 28rem;
 }
 
-.heading {
+/* .heading {
   position: sticky;
-  top: -10rem;
-}
+  top: 1rem;
+} */
 
 /* cta - button */
 .cta {
