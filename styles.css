@@ -168,13 +168,13 @@ img {
   flex-direction: column;
   align-items: center;
   margin-top: -24rem;
-  gap: .75rem;
+  gap: .6rem;
 }
 
 li {
   list-style: none;
   display: block;
-  max-width: 85%;
+  max-width: 80%;
   padding: 1.2rem;
 
   border-radius: 1.5rem 1.5rem 1.5rem 0;
@@ -203,17 +203,9 @@ li.blue {
 
 li.hide { opacity: 0; }
 
-/* CTA inside of list */
-/* li:last-of-type {
-  box-shadow: none;
-  background: none;
-  transform: rotate(0deg);
-  margin: 0;
-} */
-
 /* Image inside of list */
 li img {
-  border-radius: 1rem;
+  border-radius: .5rem;
   margin-top: .5rem;
 }
 
