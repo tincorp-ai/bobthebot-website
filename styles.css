@@ -89,7 +89,7 @@ img {
 
 .heading {
   position: sticky;
-  top: 1rem;
+  top: -1rem;
 }
 
 /* Footer */
@@ -150,7 +150,7 @@ footer a {
 
 .phone {
   position: sticky;
-  top: 24rem;
+  top: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
