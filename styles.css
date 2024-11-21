@@ -142,12 +142,11 @@ img {
 /* Chat */
 
 .phone {
-  /* position: sticky; */
-  /* top: calc(100vh - 48rem); */
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem 1rem 0;
+  max-height: calc(100vh - 28rem);
 }
 
 .phone img {
