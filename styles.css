@@ -206,7 +206,6 @@ li.hide { opacity: 0; }
 /* Image inside of list */
 li img {
   border-radius: .5rem;
-  margin-top: .5rem;
 }
 
 /* Balloons */
