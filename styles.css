@@ -95,6 +95,7 @@ img {
 }
 
 .heading {
+  max-width: 100%;
   position: sticky;
   top: 1rem;
 }
@@ -150,7 +151,8 @@ img {
 }
 
 .phone img {
-  max-height: 48rem;
+  /* max-height: 48rem; */
+  max-width: 100%;
   max-width: 24rem;
   z-index: 3;
   filter: drop-shadow(0px 40px 75px 0px #a80697);  
