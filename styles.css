@@ -87,6 +87,11 @@ img {
   max-width: 28rem;
 }
 
+.heading {
+  position: sticky;
+  top: 1rem;
+}
+
 /* Footer */
 footer {
   display: flex;
