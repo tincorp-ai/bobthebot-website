@@ -153,7 +153,7 @@ img {
 
 .phone img {
   width: 23rem;
-  max-width: 95%;
+  max-width: 85%;
   z-index: 3;
   filter: drop-shadow(0px 40px 75px 0px #a80697);  
 }
@@ -162,7 +162,7 @@ img {
   width: 100%;
   max-width: 26rem;
   z-index: 20;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 3rem;
   display: flex;
   flex-direction: column;
