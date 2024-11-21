@@ -60,17 +60,18 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: .5rem 0; 
+  padding: 1rem 0 .5rem; 
   padding-bottom: 0;
-  /* height: 100vh; */
 }
 
 .hero {
   width: 100%;
+  max-width: 100%;
   flex-grow: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 1rem;
   border-radius: 3rem;
   background: radial-gradient(
     circle at center,
@@ -81,11 +82,16 @@ img {
   );
   max-height: 53rem;
   overflow-y: scroll;
-  gap: 1rem;
+}
+
+.logo {
+  margin: .5rem;
+  mix-blend-mode: color-burn;
 }
 
 .hero p {
   max-width: 28rem;
+  padding: 0 1rem;
 }
 
 .heading {
