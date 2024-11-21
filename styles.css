@@ -62,8 +62,7 @@ img {
   align-items: center;
   padding: .5rem 0; 
   padding-bottom: 0;
-  height: 100vh;
-  overflow-y: scr;
+  /* height: 100vh; */
 }
 
 .hero {
