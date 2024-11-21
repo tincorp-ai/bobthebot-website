@@ -62,7 +62,8 @@ img {
   align-items: center;
   padding: .5rem 0; 
   padding-bottom: 0;
-  
+  height: 100vh;
+  overflow-y: scr;
 }
 
 .hero {
@@ -81,16 +82,17 @@ img {
   );
   max-height: 53rem;
   overflow-y: scroll;
+  gap: 1rem;
 }
 
 .hero p {
   max-width: 28rem;
 }
 
-/* .heading {
+.heading {
   position: sticky;
   top: 1rem;
-} */
+}
 
 /* cta - button */
 .cta {
