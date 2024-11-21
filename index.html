@@ -100,20 +100,22 @@
     });
 
     // Hide chat messages
-    const targets = document.querySelectorAll('li');
+    const container = document.querySelector('.hero'); // Select the scrollable container with class "hero"
+    const targets = container.querySelectorAll('ul li'); // Select all <li> elements inside the container
 
-window.addEventListener('scroll', () => {
-  targets.forEach(target => {
-    const targetRect = target.getBoundingClientRect();
+    container.addEventListener('scroll', () => {
+    targets.forEach(target => {
+      const targetRect = target.getBoundingClientRect();
+      const containerRect = container.getBoundingClientRect();
 
-    // Toggle the class based on each element's position
-    if (targetRect.top <= 16) {
-      target.classList.add('hide');
-    } else {
-      target.classList.remove('hide');
-    }
+      // Check if the <li> is 100px from the top of the container
+      if (targetRect.top - containerRect.top <= 400) {
+        target.classList.add('hide');
+      } else {
+        target.classList.remove('hide');
+      }
+    });
   });
-});
 
   </script>
 </body>
