@@ -19,12 +19,17 @@ body {
   min-height: 100vh;
   font-size: 100%;
   line-height: 1.5;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 input,
 textarea,
 button {
   font-size: inherit;
   font-family: inherit;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
 /* Text */
