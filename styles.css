@@ -229,22 +229,25 @@ li img {
 .balloons img {
   position: absolute;
   bottom: -200px; /* Start position */
-  transform: scale(0.5);
+  max-width: 100px;
 }
 
-.balloons img:nth-last-of-type(1) {
-  left: 0%;
-  animation: move-1 10s linear infinite; /* Infinite animation */
+.balloons img:nth-of-type(1) {
+  left: -10%;
+  bottom: -100px; /* Start position */
+  animation: move-1 20s linear infinite; /* Infinite animation */
 }
 
-.balloons img:nth-last-of-type(2) {
-  left: 75%;
-  animation: move-1 10s linear infinite; /* Infinite animation */
+.balloons img:nth-of-type(2) {
+  left: 65%;
+  bottom: -300px; /* Start position */
+  animation: move-1 20s linear infinite; /* Infinite animation */
 }
 
-.balloons img:nth-last-of-type(3) {
+.balloons img:nth-of-type(3) {
   left: 85%;
-  animation: move-1 10s linear infinite; /* Infinite animation */
+  bottom: -600px; /* Start position */
+  animation: move-1 20s linear infinite; /* Infinite animation */
 }
 
 @keyframes move-1 {
@@ -252,24 +255,24 @@ li img {
   100% { transform: translate(0, -260vh); }
 }
 
-.balloons img:nth-last-of-type(4) {
+.balloons img:nth-of-type(4) {
   left: 1%;
-  animation: move-2 10s linear infinite; /* Infinite animation */
+  animation: move-2 20s linear infinite; /* Infinite animation */
 }
 
-.balloons img:nth-last-of-type(5) {
+.balloons img:nth-of-type(5) {
   left: 70%;
-  animation: move-2 10s linear infinite; /* Infinite animation */
+  animation: move-2 20s linear infinite; /* Infinite animation */
 }
 
-.balloons img:nth-last-of-type(6) {
+.balloons img:nth-of-type(6) {
   left: 90%;
-  animation: move-2 10s linear infinite; /* Infinite animation */
+  animation: move-2 20s linear infinite; /* Infinite animation */
 }
 
 @keyframes move-2 {
-  0% { transform: translate(0, 160vh); }
-  100% { transform: translate(0, -130vh); }
+  0% { transform: translate(0, 100vh); }
+  100% { transform: translate(0, -170vh); }
 }
 
 /* Footer */
@@ -297,5 +300,5 @@ footer a {
   .hero { max-height: calc(100vh - 4rem); }
   .phone { max-height: 22rem; }
   .chat { margin-top: -19rem; }
-  .balloons img { transform: scale(1); }
+  .balloons img { max-width: 200px; }
 }
