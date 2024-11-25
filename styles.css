@@ -233,7 +233,7 @@ li img {
 }
 
 .balloons img:nth-of-type(1) {
-  left: -2%;
+  left: 5%;
   bottom: -300px; /* Start position */
   animation: move-1 20s linear infinite; /* Infinite animation */
 }
@@ -256,26 +256,26 @@ li img {
 }
 
 .balloons img:nth-of-type(4) {
-  left: 1%;
-  bottom: -100px; /* Start position */
-  animation: move-2 25s linear infinite; /* Infinite animation */
-}
-
-.balloons img:nth-of-type(5) {
-  left: 70%;
+  left: 20%;
   bottom: -300px; /* Start position */
   animation: move-2 25s linear infinite; /* Infinite animation */
 }
 
+.balloons img:nth-of-type(5) {
+  left: 10%;
+  bottom: -900px; /* Start position */
+  animation: move-2 25s linear infinite; /* Infinite animation */
+}
+
 .balloons img:nth-of-type(6) {
-  left: 90%;
-  bottom: -600px; /* Start position */
+  left: 85%;
+  bottom: -1200px; /* Start position */
   animation: move-2 25s linear infinite; /* Infinite animation */
 }
 
 @keyframes move-2 {
   0% { transform: translate(0, 110vh); }
-  100% { transform: translate(0, -240vh); }
+  100% { transform: translate(0, -260vh); }
 }
 
 /* Footer */
