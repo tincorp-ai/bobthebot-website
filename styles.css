@@ -232,45 +232,47 @@ li img {
   max-width: 100px;
 }
 
+/* b-purple */
 .balloons img:nth-of-type(1) {
   left: 5%;
   bottom: -300px; /* Start position */
-  animation: move-1 20s linear infinite; /* Infinite animation */
+  animation: move-1 21s linear infinite; /* Infinite animation */
 }
-
+/* o-yellow */
 .balloons img:nth-of-type(2) {
   left: 65%;
   bottom: -100px; /* Start position */
-  animation: move-1 20s linear infinite; /* Infinite animation */
+  animation: move-1 19s linear infinite; /* Infinite animation */
 }
-
+/* b-green */
 .balloons img:nth-of-type(3) {
   left: 85%;
   bottom: -600px; /* Start position */
-  animation: move-1 20s linear infinite; /* Infinite animation */
+  animation: move-1 22s linear infinite; /* Infinite animation */
 }
 
 @keyframes move-1 {
   0% { transform: translate(0, 10vh); }
-  100% { transform: translate(0, -240vh); }
+  100% { transform: translate(0, -220vh); }
 }
 
+/* o-orange */
 .balloons img:nth-of-type(4) {
   left: 20%;
   bottom: -300px; /* Start position */
   animation: move-2 25s linear infinite; /* Infinite animation */
 }
-
+/* b-blue */
 .balloons img:nth-of-type(5) {
   left: 10%;
   bottom: -900px; /* Start position */
-  animation: move-2 25s linear infinite; /* Infinite animation */
+  animation: move-2 28s linear infinite; /* Infinite animation */
 }
-
+/* b-pink */
 .balloons img:nth-of-type(6) {
-  left: 85%;
+  left: 80%;
   bottom: -1200px; /* Start position */
-  animation: move-2 25s linear infinite; /* Infinite animation */
+  animation: move-2 30s linear infinite; /* Infinite animation */
 }
 
 @keyframes move-2 {
