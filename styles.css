@@ -271,8 +271,8 @@ li img {
 /* b-pink */
 .balloons img:nth-of-type(6) {
   left: 80%;
-  bottom: -1200px; /* Start position */
-  animation: move-2 30s linear infinite; /* Infinite animation */
+  bottom: -800px; /* Start position */
+  animation: move-2 35s linear infinite; /* Infinite animation */
 }
 
 @keyframes move-2 {
