@@ -219,12 +219,11 @@ li img {
 }
 
 /* Final CTA */
-
 li.end {
   width: 100%;
   background: none;
   box-shadow: none;
-  margin: 2rem 0 8rem;
+  margin: 1rem 0 8rem;
   color: black;
   display: flex;
   flex-direction: column;
