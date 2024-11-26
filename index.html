@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <title>HolaBob</title>
+
   <link rel="stylesheet" href="styles.css">
   <!-- Preload phone img -->
   <link rel="preload" as="image" href="./img/phone.png" >
@@ -99,18 +101,18 @@
     const targets = container.querySelectorAll('ul li'); // Select all <li> elements inside the container
 
     container.addEventListener('scroll', () => {
-    targets.forEach(target => {
-      const targetRect = target.getBoundingClientRect();
-      const containerRect = container.getBoundingClientRect();
+      targets.forEach(target => {
+        const targetRect = target.getBoundingClientRect();
+        const containerRect = container.getBoundingClientRect();
 
-      // Check if the <li> is 100px from the top of the container
-      if (targetRect.top - containerRect.top <= 360) {
-        target.classList.add('hide');
-      } else {
-        target.classList.remove('hide');
-      }
+        // Check if the <li> is 100px from the top of the container
+        if (targetRect.top - containerRect.top <= 360) {
+          target.classList.add('hide');
+        } else {
+          target.classList.remove('hide');
+        }
+      });
     });
-  });
 
   </script>
 </body>
