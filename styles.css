@@ -224,7 +224,7 @@ li.end {
   width: 100%;
   background: none;
   box-shadow: none;
-  margin: 2rem 0 6rem;
+  margin: 2rem 0 8rem;
   color: black;
   display: flex;
   flex-direction: column;
@@ -331,4 +331,5 @@ footer a {
   .phone { max-height: 22rem; }
   .chat { margin-top: -19rem; }
   .balloons img { max-width: 200px; }
+  li.end { margin-bottom: 4rem; }
 }
