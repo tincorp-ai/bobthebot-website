@@ -336,5 +336,5 @@ footer a {
   .phone { max-height: 22rem; }
   .chat { margin-top: -19rem; }
   .balloons img { max-width: 200px; }
-  li.end { margin-bottom: 4rem; }
+  li.end { margin-bottom: 6vh; }
 }
