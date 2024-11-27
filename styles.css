@@ -44,13 +44,17 @@ h1 {
   margin: 1rem 0;
 }
 
-p {
+p, 
+a {
   color: hsl(220, 25%, 30%);
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.2px;
-  text-align: center;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 /* Images */
@@ -77,10 +81,10 @@ img {
   align-items: center;
   border-radius: 3rem;
   background: radial-gradient(
-    50% 100% at 50% 70%,
+    50% 100% at 50% 85%,
     hsl(300, 90%, 92%) 20%, 
-    hsl(50, 100%, 90%) 40%, 
-    hsl(115, 80%, 93%) 60%, 
+    hsl(50, 100%, 90%) 45%, 
+    hsl(115, 80%, 93%) 65%, 
     hsl(190, 90%, 97%) 100%
   );
   max-height: 53rem;
@@ -95,6 +99,7 @@ img {
 .hero p {
   max-width: 28rem;
   padding: 0 1rem;
+  text-align: center;
 }
 
 .heading {
@@ -352,7 +357,7 @@ footer a {
 }
 
 .privacy p {
-  text-align: left;
+  
   margin: 1rem 0;
   max-width: 40rem;
 }
