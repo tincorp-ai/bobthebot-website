@@ -330,27 +330,38 @@ footer a {
 
 .privacy {
   width: 100%;
-  /* max-width: 40rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 3rem;
   background: radial-gradient(
     50% 100% at 50% 100%,
-    hsl(300, 90%, 95%) 20%, 
-    hsl(50, 100%, 93%) 40%, 
-    hsl(115, 80%, 96%) 60%, 
+    hsl(300, 90%, 97%) 20%, 
+    hsl(50, 100%, 96%) 40%, 
+    hsl(115, 80%, 97%) 60%, 
     hsl(190, 90%, 98%) 100%
   );
+  margin-top: .5rem;
   height: 100vh;
   overflow-y: scroll;
+  padding: 1rem;
+}
+
+.privacy ul {
+  padding-left: 3rem;
 }
 
 .privacy p {
   text-align: left;
   margin: 1rem 0;
+  max-width: 40rem;
 }
 
+.privacy h2,
+.privacy h3,
+.privacy h4 {
+  margin-top: 1rem;
+}
 
 /* Desktop */
 @media only screen and (min-width: 768px) { 
