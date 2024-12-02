@@ -154,6 +154,18 @@ img {
   letter-spacing: 0.4px;
   text-decoration: none;
   z-index: 20;
+  position:relative;
+}
+
+.cta a:before {
+  position: absolute;
+  content: "";
+  top: -2rem;
+  right: -2rem;
+  left: -2rem;
+  bottom: -2rem;
+  z-index: 50;
+  /* border: solid 1px blue; */
 }
 
 .cta a:hover {
@@ -325,7 +337,7 @@ img {
 
 /* Footer */
 footer {
-  z-index: 100;
+  z-index: 50;
   display: flex;
   justify-content: center;
   align-items: center;
