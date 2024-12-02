@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- HTML Meta Tags -->
+  <title>HolaBob</title>
+  <meta name="description" content="Recordatorios de cumpleaños por mensaje. Recuerda siempre los cumpleaños de tus amigos y celébralos con regalos personalizados por IA.">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Preload phone img -->
+  <link rel="preload" as="image" href="img/phone.png" >
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  <!-- Scripts -->
+  <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://holabob.ai/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HolaBob">
+  <meta property="og:description" content="Recordatorios de cumpleaños por mensaje.">
+  <meta property="og:image" content="https://holabob.netlify.app/img/social-img.png">
+  <!-- <meta property="og:image" content="https://holabob.ai/social-img.png"> -->
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="holabob.ai">
+  <meta property="twitter:url" content="https://holabob.ai/">
+  <meta name="twitter:title" content="HolaBob">
+  <meta name="twitter:description" content="Recordatorios de cumpleaños por mensaje.">
+  <meta name="twitter:image" content="https://holabob.netlify.app/img/social-img.png">
+  <!-- <meta name="twitter:image" content="https://holabob.ai/social-img.png"> -->
+
+</head>
+
+<body>
+
+  <div class="balloons">
+    <img src="./img/b-purple.png" alt="Purple balloon" />
+    <img src="./img/o-yellow.png" alt="Yellow balloon" />
+    <img src="./img/b-green.png" alt="Green balloon" />
+    <img src="./img/o-orange.png" alt="Orange balloon" />
+    <img src="./img/b-blue.png" alt="Blue balloon" />
+    <img src="./img/b-pink.png" alt="Pink balloon" />
+  </div>
+
+  <div class="content">
+
+    <div class="hero">
+      <!-- Heading -->
+      <div class="heading">
+        <a href="#"><img src="./img/logo.svg" class="Holabob logo"/></a>
+        <h1>Recordatorios</br>de cumpleaños</br>por mensaje</h1>
+        <p>Recuerda siempre los cumpleaños de tus amigos y celébralos con regalos personalizados por IA</p>
+        <!-- CTA -->
+        <div class="cta">
+          <p>Envía un mensaje a Bob para comenzar</p>
+          <a href="https://wa.me/16194324933" target="_blank">
+            Whatsapp
+            <img src="./img/ic-whatsapp.svg" alt="Whatsapp icon"/>
+          </a>
+        </div>
+        <!-- iPhone -->
+        <div class="phone">
+          <img src="./img/phone.png" alt="Phone illustration"/>
+        </div>
+      </div>
+
+      <ul class="chat">
+        <li class="bubble">
+          ¡Hoy es el cumpleaños de María! 🎉
+        </li>
+        <li class="bubble reply" >
+          ¡Gracias Bob!
+        </li>
+        <li class="bubble">
+          Más cumpleaños esta semana: Juan y Claudia 🎂🎈
+        </li>
+        <li class="bubble reply" >
+          Crear regalos por IA para mis amigos
+        </li>
+        <li class="bubble">
+          ¡Claro! Aquí están tus regalos 🎁✨
+        </li>
+        <li class="bubble">
+          <img src="./img/present.jpg" alt="Four AI gifts made with Holabob"/>
+        </li>
+        <li class="bubble reply" >
+          ¡Se ve genial!
+        </li>
+        <li class="bubble end" >
+          <img src="./img/arrow.svg" alt="Pink arrow pointing up"/>
+          <p>Haz clic aquí</br>para comenzar</p>
+        </li>
+      </ul>
+
+    </div>    
+
+    <footer>
+      <p>2024 HolaBob &copy;</p>
+      <a href="./privacy-policy.html">Privacy policy</a>
+    </footer>
+  </div>  
+
+  <script type="module">
+    // Cursor Fx colors
+    import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+
+    new cursoreffects.fairyDustCursor({
+      colors: ["#ff00ff", "#ffff00", "#0000ff", "#ff0000"],
+    });
+
+    // Hide chat messages
+    const container = document.querySelector('.hero'); // Select the scrollable container with class "hero"
+    const targets = container.querySelectorAll('ul li'); // Select all <li> elements inside the container
+
+    container.addEventListener('scroll', () => {
+      targets.forEach(target => {
+        const targetRect = target.getBoundingClientRect();
+        const containerRect = container.getBoundingClientRect();
+
+        // Check if the <li> is X px from the top of the container
+        if (targetRect.top - containerRect.top <= 360) {
+          target.classList.add('hide');
+        } else {
+          target.classList.remove('hide');
+        }
+      });
+    });
+
+  </script>
+</body>
+</html>
